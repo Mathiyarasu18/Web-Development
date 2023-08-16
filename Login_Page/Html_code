@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login">
+        <h2>Login</h2>
+        <form>
+            <label for="username"><strong>Username</strong></label><br><br>
+            <input type="text" id="username" name="Username" placeholder="Email or Name" autocomplete="on"><br><br>
+            <label for="password"><strong>Password</strong></label><br><br>
+            <input type="password" id="password" name="Password" placeholder="Enter Password" required><br><br>
+            <input type="checkbox" id="checkbox" value="checkbox" name="remember me">
+            <label for="checkbox">Remember Me </label><br><br>
+            <button type="submit" style="color: #fff;">Login</button>
+            <p style="color:#fff">Forget <span><a href="#" style="color: red;">Password?</a></span></p>
+        </form>
+
+    </div>
+</body>
+</html>
