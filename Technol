@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technol</title>
+    <script src="http://kit.fontawesome.com/da20b69fa0.js" crossorigin="anonymous"></script>
+    <style>
+ *{
+    box-sizing: border-box;
+}
+body{
+    margin:0px 50px 20px 50px;
+    background-color:white;
+}
+
+/* header */
+.header{
+    position: relative;
+    text-align:left;
+    padding:100px ;
+    font-size: xx-large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:aliceblue;
+    background-image: url('header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Sign in button */
+.login button{
+    position: absolute;
+    top:10px;
+    left:80%;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color:rgb(220, 216, 216);
+    color:black;
+    font-weight: bold;
+   
+}
+.signup button{
+    position: absolute;
+    top:10px;
+    left:86%;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color:rgb(220, 216, 216);
+    color:black;
+    font-weight: bold;
+}
+.login button:hover{
+    background-color: gray;
+    color:white;
+}
+.signup button:hover{
+    background-color: gray;
+    color:white;
+}
+/* Navigation Bar */
+.nav{
+    position:sticky;
+    top:0;
+    
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color:rgb(20, 20, 46);
+}
+.nav li{
+    float:left;
+    font-weight: bold;
+    height: 60px;
+    
+}
+.nav a{
+    display:block;
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.search_image
+{
+    position:absolute;
+    height:20px;
+    width:20px;
+    left:406px;
+    top:392px;
+}
+
+.nav input{
+    position: absolute;
+    top:18px;
+    left:40%;
+    border-radius: 10px;
+    width:45%;
+    border:none;
+    padding: 5px;
+    left:350px;
+    padding-left:40px;
+
+}
+li.contact{
+    float: right;
+    margin: none;
+}
+.nav1.nav2::after {
+    content: " ";
+    clear:both;
+    display:table;
+}
+.nav a:hover{
+    background-color:gainsboro;
+    color:black;
+}
+
+/* Content Section */
+.content{
+    float:left;
+    padding:15px;
+}
+.content.side{
+    width:30%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-size: larger;
+}
+img{
+    margin-left: 15px;
+}
+img:hover{
+    width: 330px;
+    height:250px;
+}
+.content.middle{
+    width:70%;
+    text-align:justify;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+.one{
+    text-indent: 20px;
+}
+
+.two{
+    font-size: xx-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 50px;
+    color:rgb(4, 4, 58);
+}
+.three{
+    font-size:xx-large;
+}
+.row::after{
+    content:" ";
+    display:table;
+    clear:both;
+}
+
+.one::first-letter{
+    font-size:50px;
+    color:rgb(5, 5, 79);
+}
+
+/* Footer*/
+.footer{
+    background-color:rgb(38, 36, 36);
+    color:white;
+    padding-bottom:25%;
+    
+}
+.foot a{
+    text-decoration: none;
+    font-size: large;
+    color:gray;
+    line-height: 30px;
+}
+.foot a:hover{
+    color:white;
+}
+.foot ul{
+    list-style-type: none;
+    margin: 30px;
+    padding: 0;
+
+}
+.foot{
+    float:left;
+    margin-right: 110px;
+}
+.foot p{
+    margin-left: 25px;
+    font-size: larger;
+    padding-top: 10px;
+    border-left:4px solid purple;
+    padding-left:10px;
+    
+}
+.icons{
+    background-color:gray;
+    padding: 10px;
+}
+.icons a{
+    color: black;
+}
+.fa-brands{
+    width: 30px;
+    height:30px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+         <h1>Technol</h1>
+    </div>
+    <div class="login">
+       <a href="index.html" ><button type="button" style="padding: 8px 40px 8px 25px;">Log in</button></a>
+    </div>
+    <div class="signup">
+        <button type="button" style="padding: 8px 20px 8px 30px;">Sign up</button>
+    </div>
+    
+    <div class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li class="contact"><a href="#">Contact</a></li>
+            <li><a href="#blog">Blog</a> </li>
+            <li><a href="#skill">Skill</a> </li>
+        </ul>
+        <input type="text" name="search" id="search" placeholder="Search...">
+    </div>
+    <input type="image" src="search_icon.png" class="search_image">
+    <div class="row">
+        <div class="content middle">
+        
+        <p class="one">Technology is the application of knowledge for achieving practical goals in a reproducible way.The word technology can also mean the products resulting
+         from such efforts,including both tangible tools such as utensils or machines, and intangible ones such as software. Technology plays a critical role in science,
+         engineering, and everyday life.
+         Technological advancements have led to significant changes in society. The earliest known technology is the stone tool, used during prehistoric times, 
+         followed by the control of fire, which contributed to the growth of the human brain and the development of language during the Ice Age. The invention of
+         the wheel in the Bronze Age allowed greater travel and the creation of more complex machines. More recent technological inventions, including the printing 
+         press, telephone, and the Internet, have lowered barriers to communication and ushered in the knowledge economy.</p>
+
+        <p><span class="three"><strong> What’s the Underlying Importance of Technology?</strong></span><br><br>
+         Of course, this does raise the question of why technology is so important. Why should people keep up with the best tech blogs? It comes down to how technology
+        brings the essential parts of life together.Technological innovation helps people optimize both their professional and personal lives. This can come about 
+        through improved exchange of information thanks to IT. But the importance of technology is seen in every field. New tech helps enhance the quality of life length 
+        of life and improves our day-to-day experiences. Technology offers potential solutions to most problems as long as we stay informed.</p>
+        
+        <p> <span style="font-size: xx-large;"><strong>The top 5 Trending IT Blogs in 2023</strong></span><br><br>
+            <span class="two">1.CIO Review</span><br>
+            The CIO Review blog provides readers with comprehensive technology news and insights across a wide spectrum of topics. Aimed at C-Level and senior management,
+            you’ll find resources on<a href="#" style="color:coral"> blockchain </a>, big data, cloud migration, data analytics,<a href="#" style="color:coral"> robotics </a>, and much more. Don’t miss their case studies on the best-performing 
+            technology companies.
+        <p><span  class="two"> 2.Electric</span><br>
+            Obviously we’re biased, but <a href="#" style="color:coral"> Electric </a>strives to cover everything IT-related for both technical and non-technical readers. Whether you’re a CEO, HR manager,
+             Ops team lead, or IT professional, we’ve got the best practices you need to know when it comes to tech trends, cybersecurity, remote support, and the employee
+            IT experience. Head over to our webinars, white papers, and case studies for even more insights. We’re not the only resource out there though, below are some of
+             the other great IT blogs that we love and follow ourselves.<br>
+        <p> <span  class="two">   3.IT Brew</span><br>
+            IT Brew shares the latest news and analysis of trends shaping the IT industry, particularly within the areas of cybersecurity,<a href="#" style="color:coral"> big data </a>, software development,
+            remote work, cloud computing, and data privacy. Delivered in an easily digestible format and style, their daily newsletter is the perfect resource for all levels
+            of IT knowledge and expertise.</p>
+        <p> <span  class="two"> 4.Sentinel Labs</span> <br>
+            In the rapidly evolving world of InfoSec, Sentinel Labs is where you’ll find highly-informed deep dives into the latest<a href="#"  style="color:coral"> cybersecurity </a> dangers and developments. 
+            Threat researchers and vetted contributors share critical information on malware, exploits, cybercrime, and APTs, with the aim of contributing to a safer digital 
+            space for everyone.</p> 
+        <p> <span  class="two"> 6.MIT technology review  </span> <br>
+            The MIT Technology Review was founded in 1899 and provides insights, reviews, analyses, and interviews on new technologies. Read up on how IT impacts people all over the
+            world from a commercial, political, and social perspective. Specialist topics covered include AI, climate change,<a href="#" style="color:coral"> biotechnology </a>, and computing.</p> 
+
+        </p>
+        </div>
+
+        <div class="content side">
+        <p>While technology contributes to economic development and improves human prosperity, it can also have negative impacts like pollution and resource depletion, 
+            and can cause social harms like technological unemployment resulting from automation. As a result, there are ongoing philosophical and political debates about
+            the role and use of technology, the ethics of technology, and ways to mitigate its downsides.</p>
+            <img src="techimage.webp" alt="technology" width="300px" height="200px">
+            <iframe src="https://www.youtube.com/embed/JblNzdZ_7pw?autoplay=1" width="350" height="315" style="margin-top: 140px;"></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="foot">
+        <span class="about">
+        <p>About</p> 
+        <ul >
+           <li><a href="#">Technol</a></li>
+           <li><a href="#">About our ads</a></li>
+           <li><a href="#">Licensing</a></li>
+           <li><a href="#">FAQ</a></li>
+           <li><a href="#">Contact</a></li>
+        </ul>
+        </span>
+        </div>
+        <div class="foot">
+        <span class="section">
+        <p>Section</p> 
+        <ul>
+           <li><a href="#">Introduction</a></li>
+           <li><a href="#">Importance</a></li>
+           <li><a href="#">Ratings</a></li>
+           <li><a href="#">Video</a></li>
+           <li><a href="#">Reviews</a></li>
+        </ul>
+        </span>
+        </div>
+        <div class="foot">
+        <span class="contribute">
+        <p>Contribute</p>
+        <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Comment Guidelines</a> </li>
+         </ul>
+        </span>
+        </div>
+        <div class="foot" >
+        <span class="buy">
+         <p>Best Buy</p> 
+         <ul>
+            <li><a href="#">Best Laptops for Office</a></li>
+            <li><a href="#">Best Andriod Mobiles</a></li>
+            <li><a href="#">Best Headphones</a></li>
+            <li><a href="#">Best Laptops for Students</a></li>
+         </ul>
+        </span>
+        </div>
+
+    </div>
+
+    <div class="icons">
+    <p style="font-size: larger;"><strong>Follow us</strong></p>
+    <a href="#"><i class="fa-brands fa-instagram"></a></i>
+    <a href="#"><i class="fa-brands fa-facebook"></a></i>
+    <a href="#"> <i class="fa-brands fa-linkedin"></a></i>
+    <a href="#"><i class="fa-brands fa-twitter"></a></i>
+    <a href="#"><i class="fa-brands fa-youtube"></a></i>
+    </div>
+</body>
+</html>
