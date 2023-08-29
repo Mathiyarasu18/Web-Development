@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgb(65, 61, 61);
+    }
+    h1{
+        color:white;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .part1{
+        position:relative;
+        border:1px solid transparent;
+        width: 170px;
+        height: 295px;
+        top: 204px;
+        left:200px;
+        border-radius: 10px;
+        background-color: black;
+        box-shadow: 2px 1px 2px 2px rgb(0, 200, 255);
+       
+       
+    }
+    .button{
+        position: absolute;
+        display: inline-grid;
+        border: 1px solid transparent;
+        border-radius: 1px 1px 12px 12px;
+        padding: 10px;
+        padding-top: 5px;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        left:204px;
+        top: 383px;
+        column-gap: 33px;
+        row-gap: 3px;
+        box-shadow: 1px 1px 2px 2px grey;
+        background-color: rgb(36, 30, 30);
+    }
+    .button>div{
+        color: white;
+        font-size: 18px;
+        text-align:end;
+    }
+   .part2{
+        position: absolute;
+        border:1px solid black;
+        width: 170px;
+        height: 300px;
+        top: 200px;
+        left:200px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 2px 2px rgb(0, 183, 255);
+        transition: top 0.5s linear; 
+    }
+    .part2:hover{
+          top:80px;
+    }
+    .mobile{
+        position: absolute;
+        transform:translate(395px,-60px);
+        animation:mob 1.5s linear 1s;
+    }
+    @keyframes mob{
+        0%{transform:rotate3d(1,3,0.5,4.2rad);}
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>Nokia X Slide</h1>
+<div class="mobile">
+    <div class="part1"></div>
+    <div class="button">
+     <div>1<span style="font-size: xx-small;">&nbsp;&nbsp;&nbsp;</span></div>
+     <div>2<span style="font-size: xx-small;">abc</span></div>
+     <div>3<span style="font-size: xx-small;">&nbsp;def</span></div>
+     <div>4<span style="font-size: xx-small;">&nbsp;ghf</span></div>
+     <div>5<span style="font-size: xx-small;">&nbsp;jkl</span></div>
+     <div>6<span style="font-size: xx-small;">mno</span></div>
+     <div>7<span style="font-size: xx-small;">pqrs</span></div>
+     <div>8<span style="font-size: xx-small;">tuv</span></div>
+     <div>9<span style="font-size: xx-small;">wxyz</span></div>
+     <div>*<span style="font-size: xx-small;">+</span></div>
+     <div>0<span style="font-size: xx-small;">_</span></div>
+     <div>#<span style="font-size: xx-small;">_</span></div>
+     </div>
+     <div class="part2">
+      <img src="nokia.png" width="169px" height="297px">
+     </div>
+</div>
+</body>
+</html>
