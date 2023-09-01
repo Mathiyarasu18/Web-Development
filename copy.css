@@ -1,0 +1,57 @@
+
+.nav2 a{
+    text-decoration: none;
+    padding:0;
+    margin:0;
+    color:white;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: sans-serif; 
+}
+
+
+
+
+
+
+.about,.resume,.project{
+    display: inline;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px 2px gray;
+    
+    margin-left: 50px;
+}
+.resume{
+    position: relative;
+    padding:80px;
+    top:150px;
+    left:38%;
+    z-index: 1;
+    transition:background-color 0.2s ease-in-out;
+}
+.about{
+    position:absolute;
+    padding:60px;
+    top:40%;
+    left:28%;
+    transition: background-color 0.2s ease-in-out;
+}
+.project{
+    position:absolute;
+    padding:60px;
+    top:40%;
+    left:52%;
+    transition: background-color 0.2s ease-in-out;
+}
+.resume:hover{
+    padding: 83px;
+    background-color:rgb(210, 149, 74);
+
+}
+.about:hover,.project:hover{
+    z-index: 2;
+    padding:62px;
+   
+    color:black;
+}
