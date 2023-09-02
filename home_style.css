@@ -1,0 +1,166 @@
+
+*{
+    box-sizing: border-box;
+}
+.animate>div{
+    position: relative;
+    top:15em;
+    opacity:0.1;
+    animation: slide 1s ease-in-out forwards ;
+}
+@keyframes slide{
+    from{top:15em;opacity: 0.1;}
+    to{top:1em;opacity:1}
+}
+
+.bgimage{
+    background: url(assets/bgimage.webp) no-repeat center;
+    background-size: cover ;
+}
+.nav1>ul{
+    list-style-type: none ;
+    margin: 0;
+    padding: 0;
+}
+.nav1 a{
+    display: block;
+    padding:0.7em;
+    text-decoration: none;
+    font-size: larger;
+    color:white;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar{
+    display: flex;
+    gap:5%;
+    background-color: rgb(60, 15, 15);
+}
+.navbar  a:hover{
+    background-color: brown;
+}
+.active{
+    background-color: aqua;
+}
+.name h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:rgb(115, 26, 26);
+    text-shadow: 3px 1px burlywood ;
+    transition: font-size 0.1s linear;
+}
+
+.name>h2{
+    text-align: center;
+    font-size: xx-large;
+    color:rgb(115, 26, 26);
+}
+.nav2>ul{
+    display:flex;
+    height:15em;
+    width:100%;
+    margin-top:3em ;
+    border:1px solid transparent;
+    align-items: center;
+    justify-content: center;
+}
+.nav2 ul,a{
+    list-style: none;
+    text-decoration: none;
+}
+.nav2 a{
+    border: 1px solid transparent;
+    padding: 4.2em;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 50%;
+    margin:0;
+    color: white;
+    background-color: rgb(134, 83, 42);
+    transition:padding 0.3s ease-in-out;
+
+}
+.resume a{
+    padding: 5em;
+}
+.resume{
+    position:relative;
+    right:4%;
+    z-index:3;
+}
+.about{
+    position: absolute;
+    left:29%;
+    top:30%
+    
+}
+.project{
+    position: absolute;
+    right:33%;
+    top:30%;
+}
+.nav2 a{
+    box-shadow: 2px 2px 2px 1px rgb(112, 57, 15);
+}
+.nav2 a:hover{
+    background-color:rgb(210, 149, 74);
+    padding: 4.3em;
+    color:rgb(128, 56, 20);
+}
+.resume a:hover{
+    padding:5.3em;
+}
+.about:hover,.project:hover{
+    z-index:4;
+}
+ .skill{
+    position: relative;
+    width: 30%;
+    top:5em;
+    left:35%;
+    padding: 1% 2%;
+    color:white;
+    box-shadow: 2px 2px 5px 0.5px rgb(128, 61, 27) ;
+    border-radius: 1em 0 1em 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.Title{
+    border-bottom: 3px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer{
+    border:1px solid black;
+    background-color: rgb(26, 15, 7);
+    height:20em;
+    margin-top: 20%;
+}
+.contact>a,.contacts>h2,.contents>a,.content>h2{
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fa-solid,.fa-brands{
+    color:white;
+} 
+.footer{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: nowrap;
+}
+.footer h2,.Title h1{
+    border-bottom: 3px solid rgb(9, 236, 191);
+    width:0em;
+    transition:width 0.3s ease-out;
+}
+.footer h2:hover{
+    width: 4.2em;
+}
+.Title h1:hover{
+    width:2.3em;
+}
+.footer a:hover{
+    color: aqua;
+}
